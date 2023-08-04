@@ -18,11 +18,13 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
 import { FiSun, FiMoon } from "react-icons/fi";
 
+import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
+
 const navLinks = [
-  { name: "Home", path: "#" },
-  { name: "About", path: "#" },
-  { name: "Projects", path: "#" },
-  { name: "Contact", path: "#" },
+  { name: "Home", path: "home" },
+  { name: "About", path: "about" },
+  { name: "Projects", path: "projects" },
+  { name: "Contact", path: "contact" },
 ];
 export default function Navbar() {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -65,7 +67,7 @@ export default function Navbar() {
           as="nav"
           spacing={1}
           display={{ base: "none", md: "flex" }}
-          fontSize={{ base: "sm", md: "md" , lg: "lg" }}
+          fontSize={{ base: "sm", md: "md", lg: "lg" }}
           alignItems="center">
           {navLinks.map((link, index) => (
             <NavLink key={index} {...link} onClose={onClose} />
@@ -106,20 +108,29 @@ const NavLink = ({ name, path, onClose }) => {
   };
 
   return (
-    <Link
-      href={path}
-      px={3}
-      py={1}
-      lineHeight="inherit"
-      rounded="md"
-      _hover={{
-        textDecoration: "none",
-        bg: link.bg,
-        color: link.color,
-      }}
-      onClick={() => onClose()}>
-      {name}
-    </Link>
+    <ScrollLink
+      to={path}
+      smooth={true}
+      duration={500}
+      spy={true}
+      exact="true"
+      offset={-70}
+      activeClass="active"
+      onClick={onClose}>
+      <Link
+        px={3}
+        py={1}
+        lineHeight="inherit"
+        rounded="md"
+        _hover={{
+          textDecoration: "none",
+          bg: link.bg,
+          color: link.color,
+        }}
+        onClick={() => onClose()}>
+        {name}
+      </Link>
+    </ScrollLink>
   );
 };
 

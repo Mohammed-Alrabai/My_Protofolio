@@ -93,7 +93,7 @@ function Hero() {
     }
   ];
   return (
-    <Container maxW="6xl" px={{ base: 6, md: 3 }} py={{ base: 12, md: 28 }}>
+    <Container id="home" maxW="6xl" px={{ base: 6, md: 3 }} py={{ base: 12, md: 28 }}>
       <Box>
         <Stack
           direction={{ base: "column-reverse", lg: "row" }}

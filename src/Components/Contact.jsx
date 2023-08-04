@@ -15,7 +15,7 @@ import {
 import { AiOutlineMail, AiFillLinkedin } from "react-icons/ai";
 function Contact() {
   return (
-    <Box bg={useColorModeValue("white", "gray.800")}>
+    <Box id='contact' bg={useColorModeValue("white", "gray.800")}>
       <div className="container px-6 py-12 mx-auto">
         <div className="text-center">
           <Text

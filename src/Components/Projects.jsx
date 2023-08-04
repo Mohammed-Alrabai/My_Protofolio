@@ -61,11 +61,12 @@ function Projects() {
       In this project, I applied my knowledge of React and followed best practices to build a React application. I made extensive use of essential React hooks like useState, useEffect, useContext, and useReducer, along with various components to create a feature-rich and well-organized project.
       `,
       technologies: ["React", "Mui UI"],
-    },
+    }
   ];
   return (
     <>
       <Flex
+        id="projects"
         maxW={{ lg: "5xl" }}
         p={50}
         mx={"auto"}
@@ -87,20 +88,18 @@ function Projects() {
             Here are some of my projects 🧩
           </Text>
         </Box>
-        {Projects.map((project) => {
+        {Projects.map((project , index) => {
           return (
             <Box
-              mb={10}
               key={project.id}
+              mb={10}
               bg="white"
               _dark={{ bg: "gray.800" }}
-              flexDirection={
-                project.id % 2 === 0 ? "row-reverse" : "row"
-              }
+              flexDirection={project.id % 2 === 0 ? "row-reverse" : "row"}
               display={{ lg: "flex" }}
               shadow={{ lg: "lg" }}
               rounded={{ lg: "lg" }}>
-              <Box w={{ lg: "50%" }} overflow={"hidden"}>
+              <Box w={{ lg: "50%" }} overflow={"hidden"} py={12} px={6}>
                 <Link href={project.linkDemo} target="_blank">
                   <Box
                     h={{ base: 64, lg: "full" }}

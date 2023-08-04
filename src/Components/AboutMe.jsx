@@ -13,7 +13,7 @@ import {
 
 function AboutMe() {
   return (
-    <Box bg={useColorModeValue("white", "gray.800")} py={{ base: 12, md: 24 }}>
+    <Box id="about" bg={useColorModeValue("white", "gray.800")} py={{ base: 12, md: 24 }}>
       <Container
         maxW="6xl"
         px={{ base: 6, md: 3 }}
