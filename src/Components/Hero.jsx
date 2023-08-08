@@ -45,7 +45,7 @@ function Hero() {
     },
     {
       name: "Twitter",
-      path: "/",
+      path: "#",
       icon: FaTwitter,
     },
   ];

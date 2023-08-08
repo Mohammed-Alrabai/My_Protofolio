@@ -18,7 +18,7 @@ const accounts = [
     icon: <FaGithub />,
   },
   {
-    url: "/",
+    url: "#",
     label: "Twitter Account",
     type: "twitter",
     icon: <FaTwitter />,
