@@ -45,7 +45,7 @@ function Hero() {
     },
     {
       name: "Twitter",
-      path: "https://twitter.com/MohammedAlrabai",
+      path: "/",
       icon: FaTwitter,
     },
   ];
