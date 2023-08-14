@@ -15,7 +15,7 @@ import TargetProject from "../assets/img/MYProject/target.png";
 import gameProject from "../assets/img/MYProject/gamechamp.png";
 import eidProject from "../assets/img/MYProject/eid-greeting-cards.png";
 import todoProject from "../assets/img/MYProject/todo-app-2.png";
-import carvista from "../assets/img/MYProject/carvista.png";
+import carvista from "../assets/img/MYProject/carVista.png";
 
 function Projects() {
   const Projects = [
@@ -139,8 +139,8 @@ Discover the thrill of the open road and explore breathtaking destinations with 
                   {project.name}
                 </chakra.h2>
                 {project.name == "Target" && (
-                  <Text mt={2} color="blue.300" _dark={{ color: "gray.400" }}>This project only works on desktop
-
+                  <Text mt={2} color="blue.300" _dark={{ color: "gray.400" }}>
+                    This project only works on desktop
                   </Text>
                 )}
                 <chakra.p mt={2} color="gray.600" _dark={{ color: "gray.400" }}>
