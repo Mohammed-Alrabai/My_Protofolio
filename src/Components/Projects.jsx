@@ -9,12 +9,13 @@ import {
   Icon,
 } from "@chakra-ui/react";
 import { AiFillGithub } from "react-icons/ai";
-import {FiExternalLink} from "react-icons/fi";
+import { FiExternalLink } from "react-icons/fi";
 
 import TargetProject from "../assets/img/MYProject/target.png";
 import gameProject from "../assets/img/MYProject/gamechamp.png";
 import eidProject from "../assets/img/MYProject/eid-greeting-cards.png";
 import todoProject from "../assets/img/MYProject/todo-app-2.png";
+import Carvista from "../assets/img/MYProject/carvista.png";
 
 function Projects() {
   const Projects = [
@@ -23,7 +24,7 @@ function Projects() {
       name: "Target",
       img: TargetProject,
       linkGithub: "https://github.com/Mohammed-Alrabai/Target-Project-Frontend",
-      linkDemo: "https://the-target.netlify.app/",
+      linkDemo: "https://target22.netlify.app/",
       description: `
       The "Target" project aims to enhance communication and idea exchange among employees and managers in the organization. The project enables employees to share their solutions to problems and suggestions with the authorities, promoting continuous development and achieving sustainable success.
       `,
@@ -61,7 +62,18 @@ function Projects() {
       In this project, I applied my knowledge of React and followed best practices to build a React application. I made extensive use of essential React hooks like useState, useEffect, useContext, and useReducer, along with various components to create a feature-rich and well-organized project.
       `,
       technologies: ["React", "Mui UI"],
-    }
+    },
+    {
+      id: 5,
+      name: "Carvista",
+      img: Carvista,
+      linkGithub: "https://github.com/Mohammed-Alrabai/CarVista_Frontend",
+      linkDemo: "https://carvista3.netlify.app/",
+      description: `CarVista
+
+Discover the thrill of the open road and explore breathtaking destinations with our top-tier car rental services. At CarVista, we transform your travel dreams into unforgettable journeys. Whether it's a weekend getaway or a cross-country expedition, CarVista is your trusted companion for a seamless and exciting road trip.`,
+      technologies: ["React", "Tailwind", "ChakraUI", "Express", "MongoDB"],
+    },
   ];
   return (
     <>
@@ -88,7 +100,7 @@ function Projects() {
             Here are some of my projects 🧩
           </Text>
         </Box>
-        {Projects.map((project , index) => {
+        {Projects.map((project) => {
           return (
             <Box
               key={project.id}
@@ -126,7 +138,12 @@ function Projects() {
                   fontWeight="bold">
                   {project.name}
                 </chakra.h2>
-                <chakra.p mt={4} color="gray.600" _dark={{ color: "gray.400" }}>
+                {project.name == "Target" && (
+                  <Text mt={2} color="blue.300" _dark={{ color: "gray.400" }}>This project only works on desktop
+
+                  </Text>
+                )}
+                <chakra.p mt={2} color="gray.600" _dark={{ color: "gray.400" }}>
                   {project.description}
                 </chakra.p>
                 <Box

@@ -34,9 +34,12 @@ function Contact() {
         <Flex
           align="center"
           justify="space-around"
+          flexDirection={{ base: "column", md: "row" }}
+          w={"full"}
           mx={"auto"}
           maxW={"4xl"}
           p={6}
+          gap={{ base: 5, md: 10 }}
           mt={10}>
           <Box
             display={"flex"}
@@ -44,6 +47,7 @@ function Contact() {
             justifyContent={"center"}
             textAlign={"center"}
             flexDirection={"column"}
+            
             bg={useColorModeValue("white", "gray.800")}
             mx={"auto"}>
             <chakra.span

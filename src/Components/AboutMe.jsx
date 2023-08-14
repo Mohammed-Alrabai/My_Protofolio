@@ -13,7 +13,10 @@ import {
 
 function AboutMe() {
   return (
-    <Box id="about" bg={useColorModeValue("white", "gray.800")} py={{ base: 12, md: 24 }}>
+    <Box
+      id="about"
+      bg={useColorModeValue("white", "gray.800")}
+      py={{ base: 12, md: 24 }}>
       <Container
         maxW="6xl"
         px={{ base: 6, md: 3 }}
@@ -63,7 +66,7 @@ function AboutMe() {
               lineHeight={1}
               fontWeight="bold"
               textAlign={{ base: "center", md: "left" }}>
-              A dedicated MERN Stack Developer. 🖥️👨‍💻 <br />
+              {/* A dedicated MERN Stack Developer. 🖥️👨‍💻 <br /> */}
             </chakra.h2>
             <Box>
               <Content textAlign={{ base: "center", md: "left" }}>

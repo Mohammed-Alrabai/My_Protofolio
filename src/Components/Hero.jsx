@@ -31,7 +31,7 @@ import MongoLogo from "../assets/img/MySkills/mongodb.svg";
 import FigmaLogo from "../assets/img/MySkills/figma.svg";
 
 function Hero() {
-  const sentence = `Mern Stack Web Developer`.split("");
+  const sentence = `JavaScript Web   Developer`.split("");
   const socials = [
     {
       name: "Github",
@@ -130,7 +130,7 @@ function Hero() {
               lineHeight="1.375"
               fontWeight="400"
               color="gray.500">
-              Hi, my name is Mohammed Al-Rabai, and I am a MERN Stack
+              Hi, my name is Mohammed Al-Rabai, and I am a JavaScript 
               developer. I have a strong passion for web development, and I am
               from Riyadh, Saudi Arabia.📍
             </Text>
