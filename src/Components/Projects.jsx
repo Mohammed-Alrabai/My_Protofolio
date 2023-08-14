@@ -15,7 +15,7 @@ import TargetProject from "../assets/img/MYProject/target.png";
 import gameProject from "../assets/img/MYProject/gamechamp.png";
 import eidProject from "../assets/img/MYProject/eid-greeting-cards.png";
 import todoProject from "../assets/img/MYProject/todo-app-2.png";
-import Carvista from "../assets/img/MYProject/carvista.png";
+import carvista from "../assets/img/MYProject/carvista.png";
 
 function Projects() {
   const Projects = [
@@ -66,7 +66,7 @@ function Projects() {
     {
       id: 5,
       name: "Carvista",
-      img: Carvista,
+      img: carvista,
       linkGithub: "https://github.com/Mohammed-Alrabai/CarVista_Frontend",
       linkDemo: "https://carvista3.netlify.app/",
       description: `CarVista
