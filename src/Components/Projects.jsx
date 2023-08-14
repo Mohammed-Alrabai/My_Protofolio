@@ -18,6 +18,7 @@ import todoProject from "../assets/img/MYProject/todo-app-2.png";
 import carvista from "../assets/img/MYProject/carVista.png";
 
 function Projects() {
+  // private
   const Projects = [
     {
       id: 1,
